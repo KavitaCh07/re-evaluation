@@ -1,0 +1,101 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@600&display=swap');
+
+.form-container {
+    display: flex;
+    flex-basis: 55%;
+    flex-direction: column;
+    /* background-color: aquamarine; */
+    padding: 3rem 5rem 1.5rem 4rem;
+}
+
+.form-inner-container {
+    /* display: flex; */
+    height: 100%;
+    /* background-color: black; */
+    /* justify-content: space-around; */
+}
+
+.sign-in-to-your-acco {
+    color: #FFFFFF;
+    font-family: "Open Sans";
+    font-size: 20px;
+    font-weight: 600;
+    letter-spacing: 1.67px;
+    line-height: 27px;
+    text-align: center;
+    padding-bottom: 2rem;
+}
+
+#inputfield-2{
+    background-image: url('../../assets/icons/eye_on.png');
+    background-position: right;
+    background-repeat: no-repeat;
+    /* padding-left: 3px; */
+}
+
+input {
+    width: 97%;
+    height: 3rem;
+    margin-bottom: 16px;
+    outline: none;
+    border: none;
+    border: 0.55px solid rgba(208, 208, 208, 0.5);
+    border-radius: 4px;
+    background-color: #FFFFFF;
+    padding-left: 1.4rem;
+}
+
+input::placeholder {
+    color: #787E8C;
+    font-family: "Open Sans";
+    font-size: 16px;
+    font-weight: 600;
+    letter-spacing: 0;
+    line-height: 22px;
+    /* padding-left: 1.4rem; */
+}
+
+/* .eye_on {
+    position: absolute;
+    padding-bottom:5rem ;
+} */
+
+.forgot-password {
+    color: #FFFFFF;
+    font-family: "Open Sans";
+    font-size: 14px;
+    font-weight: 600;
+    letter-spacing: 0;
+    line-height: 19px;
+    text-align: right;
+    padding-bottom: 3.5rem;
+}
+
+.btn {
+    border-radius: 4px;
+    background-color: #FFFFFF;
+    border: none;
+    padding: 0.7rem 2rem 0.7rem 2rem;
+}
+
+.sign-in {
+    color: #0E85FF;
+    font-family: "Open Sans";
+    font-size: 18px;
+    font-weight: 600;
+    letter-spacing: 1.2px;
+    line-height: 24px;
+
+}
+
+.dont-have-a-account {
+    color: #FFFFFF;
+    font-family: "Open Sans";
+    font-size: 14px;
+    font-weight: 600;
+    letter-spacing: 0;
+    line-height: 19px;
+    /* text-align: center; */
+    padding-top: 3rem;
+}
