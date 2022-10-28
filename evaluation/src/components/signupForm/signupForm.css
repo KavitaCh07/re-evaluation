@@ -1,0 +1,15 @@
+.form-inner {
+    display: flex;
+    /* background-color: black; */
+    /* justify-content: space-around; */
+}
+
+.sign-up{
+    color: #FFFFFF;
+  font-family: "Open Sans";
+  font-size: 20px;
+  font-weight: 600;
+  letter-spacing: 1.67px;
+  line-height: 27px;
+  padding-bottom: 2rem;
+}

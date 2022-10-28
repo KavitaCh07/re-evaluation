@@ -9,6 +9,7 @@
 
 .logo {
     padding-bottom: 1rem;
+    display: flex;
     flex-wrap: wrap;
     /* padding: 5rem 3rem 1rem 3rem; */
 }
