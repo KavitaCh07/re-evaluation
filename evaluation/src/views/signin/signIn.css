@@ -1,16 +1,29 @@
 .container {
+    /* display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #F5F7FB;
+    min-height: 99vh;
+    flex-wrap: wrap; */
     display: flex;
     align-items: center;
     justify-content: center;
     background-color: #F5F7FB;
-    height: 100vh;
+    min-height: 100vh;
 }
 
 .container-box {
     display: flex;
-    height: 50%;
-    width: 65%;
+    flex-direction: row;
+    align-items: center;
+    background: linear-gradient(180deg, #20BBFF 0%, #0E85FF 100%);
+    box-shadow: 0 8px 18px 10px rgba(0, 0, 0, 0.02);
+    border-radius: 15px;
+
+    /* display: flex;
     border-radius: 15px;
     background: linear-gradient(180deg, #20BBFF 0%, #0E85FF 100%);
     box-shadow: 0 8px 18px 10px rgba(0, 0, 0, 0.02);
+    flex-direction: row;
+    align-items: center; */
 }

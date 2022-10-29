@@ -1,29 +1,28 @@
-import './signupForm.css';
-import React from 'react'
-import { useState } from 'react';
-import eye_on from '../../assets/icons/eye_on.png';
-// import { Icon } from 'react-icons-kit';
-// import { eye } from 'react-icons-kit/feather/eye';
-// import { eyeOff } from 'react-icons-kit/feather/eyeOff';
+import './signUpForm.css';
+import Input from '../formInput/input';
+import eye_on from '../../assets/icons/eye_on.png'
 import { Link } from 'react-router-dom';
 
-const SignupForm = () => {
-    const [password, setPassword] = useState(false);
-    const togglePassword = () => {
-        setPassword(!password);
-    };
-  return (
-    
-    <div className='form-container'>
-    <div className='form-inner'>
-        <form action="">
-            <div className='sign-up'>SIGN UP</div>
-            <input type="tel" name="" id="" />
-           
-        </form>
+const SignUpForm = () => {
+    return <div className='form-container containers '>
+        <div className='sign-up'>SIGN UP</div>
+
+        <div>
+        <Input type="tel" placeholder="Enter Mobile Number"/>
+        </div>
+
+        <div>
+        <Input type="tel" placeholder="Enter 4 Digit MPin"/>
+        </div>
+
+        <div className='mpin-field mpin'>
+            <Input type="" placeholder="MPin"/>
+            <img src={eye_on} alt="" className='eye_on-icon' />
+        </div>
+
+        <button className='btn' type="submit"> <Link to="/"><span className='sign-in'>SIGN UP</span></Link></button>
+
     </div>
-</div>
-  )
 }
 
-export default SignupForm;
+export default SignUpForm;

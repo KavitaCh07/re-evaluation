@@ -1,22 +1,16 @@
 import './signUp.css';
-import React from 'react'
 import Logo from '../../components/logo/logo';
-import SignupForm from '../../components/signupForm/signupForm';
+import SignUpForm from '../../components/signupForm/signUpForm';
 
-function SignUp(){
-  return (
-    <>
-        <div className='container'>
+function SignUp () {
+    return <div className='container'>
         <div className='container-box'>
             <Logo />
-            {/* <Form /> */}
-            <SignupForm />
+            <SignUpForm />
 
         </div>
 
     </div>
-    </>
-  )
-}
+} 
 
-export default SignUp
+export default SignUp;

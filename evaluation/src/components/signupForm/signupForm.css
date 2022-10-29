@@ -1,10 +1,13 @@
-.form-inner {
-    display: flex;
-    /* background-color: black; */
-    /* justify-content: space-around; */
-}
+.form-container {
+    padding: 1rem 5rem;
+    width: 24vw;
+} 
+/* .containers {
+    height: .188px; 
+    width:80%;
+} */
 
-.sign-up{
+.sign-up {
     color: #FFFFFF;
   font-family: "Open Sans";
   font-size: 20px;
@@ -12,4 +15,8 @@
   letter-spacing: 1.67px;
   line-height: 27px;
   padding-bottom: 2rem;
+}
+
+.mpin {
+    padding-bottom: 2rem;
 }

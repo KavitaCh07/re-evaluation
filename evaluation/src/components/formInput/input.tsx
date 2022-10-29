@@ -1,13 +1,13 @@
 import './input.css';
-import React from 'react'
-interface props {
-    plaaceholder: string;
-}
+import React from 'react';
 
-const Input = () => {
+
+
+const Input = (props : any) => {
   return (
     <div>
-        {/* <input placeholder={props.placeholder}/> */}
+        <input type={props.type} placeholder={props.placeholder} className='input-field'/> 
+        {/* <input className="field" required type={props.type} name={props.name} placeholder={props.placeholder} onChange={props.onChange} /> */}
     </div>
   )
 }
