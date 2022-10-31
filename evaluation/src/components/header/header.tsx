@@ -5,12 +5,18 @@ import profile from '../../assets/icons/profile.png'
 
 const Header = () => {
     return <div className='header'>
-        <div>
+        <div className='pass-logo'>
             <img src={pass_logo} alt="" />
         </div>
-        <div>
+        <div className='header-left-icon'>
+            <div className=''>
             <img src={sync} alt="" />
-            <img src={sync} alt="" />
+            </div>
+
+            <div>
+            <img src={profile} alt="" />
+            </div>
+
         </div>
     </div>
 }

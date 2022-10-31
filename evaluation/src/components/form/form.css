@@ -1,80 +1,87 @@
- .form-container {
-    padding: 1rem 5rem;
-} 
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@600&display=swap');
 
-.sign-in-to-your-acco {
-    color: #FFFFFF;
-    font-family: "Open Sans";
+.leftContainer {
+    padding: 2.8rem 3rem 1rem 3rem;
+    border-left: 1px solid #f5f7fb16;
+    min-width: 25%;
+  }
+  
+  .signInText {
+    color: #ffffff;
     font-size: 20px;
     font-weight: 600;
     letter-spacing: 1.67px;
     line-height: 27px;
     text-align: center;
-    margin-bottom: 1.5rem;
-}
-
-/* .input-field {
+    padding-bottom: 1.5rem;
+  }
+  
+  .inputField {
     box-sizing: border-box;
-    border: 0.55px solid rgba(208,208,208,0.5);
+    border: 0.55px solid rgba(208, 208, 208, 0.5);
     border-radius: 4px;
-    background-color: #FFFFFF;
-    padding: 12px 20px;
-    margin:  8px 0;
-    display: inline-block;
-    outline: none;
+    background-color: #ffffff;
+    padding: 1em 1em;
     width: 100%;
-} */
-
-.mpin-field {
-    position: relative;
-}
-
-.eye_on-icon {
-    position: absolute;
-    top: 1.1rem;
-    right: 1rem;
-}
-
-.forgot-your-password  {
-    color: #FFFFFF;
-  font-family: "Open Sans";
-  font-size: 14px;
-  font-weight: 600;
-  letter-spacing: 0;
-  line-height: 19px;
-  text-align: right;
-  padding-bottom: 2.5rem;
-}
-
-.btn {
-    border-radius: 4px;
-    background-color: #FFFFFF;
-    outline: none;
     border: none;
-    padding: 0.6rem 1.8rem 0.6rem 1.8rem;
-}
+    outline: none;
+    font-size: 15px;
+    font-weight: 700;
+    letter-spacing: 1px;
+    margin: 0.7rem 0rem;
+  }
 
-.sign-in {
-    color: #0E85FF;
+  .inputField:placeholder-shown {
+    color: #787E8C;
     font-family: "Open Sans";
-    font-size: 18px;
+    font-size: 16px;
     font-weight: 600;
-    letter-spacing: 1.2px;
-    line-height: 24px;
-}
-
-.dont-have-a-account {
-    color: #FFFFFF;
-  font-family: "Open Sans";
-  font-size: 14px;
-  font-weight: 600;
-  letter-spacing: 0;
-  line-height: 19px;
-  padding-top: 4rem;
-  /* text-align: center; */
-}
-
-a {
-    all: unset;
-    cursor: pointer;
-}
+    letter-spacing: 0;
+    line-height: 22px;
+  }
+  
+  .passwordPin {
+    position: relative;
+  }
+  
+  .eyeIcon {
+    position: absolute;
+    top: 1.7rem;
+    right: 1rem;
+  }
+  
+  .forgotPassword {
+    color: #ffffff;
+    font-size: 14px;
+    font-weight: 600;
+    letter-spacing: 1px;
+    line-height: 19px;
+    text-align: right;
+  }
+  
+  .signInButton {
+    border-radius: 4px;
+    background-color: #ffffff;
+    border: none;
+    padding: 0.8em 2em;
+    font-size: 1rem;
+    font-weight: 600;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    color: #0e85ff;
+    margin: 2rem 0rem;
+  }
+  
+  .createAccount {
+    color: #ffffff;
+    font-size: 14px;
+    font-weight: 600;
+    letter-spacing: 1px;
+    line-height: 19px;
+  }
+  
+  .linkButton {
+    text-decoration: none;
+    color: #ffffff;
+  }

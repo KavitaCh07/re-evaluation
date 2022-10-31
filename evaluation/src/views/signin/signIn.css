@@ -1,29 +1,57 @@
 .container {
-    /* display: flex;
-    align-items: center;
-    justify-content: center;
-    background-color: #F5F7FB;
-    min-height: 99vh;
-    flex-wrap: wrap; */
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    background-color: #F5F7FB;
     min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
-.container-box {
+
+
+.loginContainer {
     display: flex;
     flex-direction: row;
-    align-items: center;
     background: linear-gradient(180deg, #20BBFF 0%, #0E85FF 100%);
-    box-shadow: 0 8px 18px 10px rgba(0, 0, 0, 0.02);
-    border-radius: 15px;
+    border-radius: 1.5rem;
+    box-shadow: 0 0.8rem 1.8rem 1rem rgba(0, 0, 0, 0.02);
 
-    /* display: flex;
-    border-radius: 15px;
-    background: linear-gradient(180deg, #20BBFF 0%, #0E85FF 100%);
-    box-shadow: 0 8px 18px 10px rgba(0, 0, 0, 0.02);
-    flex-direction: row;
-    align-items: center; */
+}
+
+.mobileLogo {
+    display: none;
+}
+
+
+@media only screen and (max-width: 600px) {
+    .loginContainer {
+        flex-direction: column;
+        border-radius: 0px;
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        right: 0;
+        left: 0;
+
+    }
+
+    .leftContainer {
+        min-width: 0px;
+    }
+
+    .mobileLogo {
+        display: block;
+    }
+
+    .rightContainer {
+        display: none;
+    }
+
+    .signUpText {
+        display: none;
+    }
+
+    .signInText {
+        display: none;
+    }
+
+
 }

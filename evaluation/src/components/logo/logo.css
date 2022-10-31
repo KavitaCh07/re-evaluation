@@ -1,25 +1,46 @@
-@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@600&display=swap');
- 
-
-.logo-container {
-    border-right: 1px solid rgba(245, 247, 251, 0.19);
-    
+.rightContainer {
+    border-right: 1px solid #f5f7fb16;
+    padding: 3rem 2rem;
 }
 
-.logo-img {
-    display: flex;
-    justify-content: center;
-    padding: 4rem 4rem 3rem 3.5rem;
-}
-
-.protect-manage-eve {
+.lockText {
     color: #FFFFFF;
-    font-family: "Open Sans";
-    font-size: 18px;
+    font-size: 20px;
     font-weight: 600;
     letter-spacing: 1px;
     line-height: 27px;
     text-align: center;
-    margin-bottom: 5rem;
-    padding: 0rem 0.2rem 0 0.2rem;
+}
+
+.imgContainer {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 2rem;
+}
+
+.tabs {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    border-bottom: 1px solid #f5f7fb16;
+}
+
+.mobileSignIn {
+    color: #FFFFFF;
+    font-size: 20px;
+    font-weight: 600;
+    letter-spacing: 0;
+    line-height: 27px;
+    text-transform: uppercase;
+    text-decoration: none;
+}
+
+.underline {
+    border-bottom: 3px solid orange;
+}
+
+.logoDesign {
+    display: flex;
+    justify-content: center;
+    padding: 3rem;
 }

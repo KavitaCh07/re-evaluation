@@ -1,16 +1,17 @@
 .container {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    background-color: #F5F7FB;
     min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
-.container-box {
+
+
+.loginContainer {
     display: flex;
     flex-direction: row;
-    align-items: center;
     background: linear-gradient(180deg, #20BBFF 0%, #0E85FF 100%);
-    box-shadow: 0 8px 18px 10px rgba(0, 0, 0, 0.02);
-    border-radius: 15px;
+    border-radius: 1.5rem;
+    box-shadow: 0 0.8rem 1.8rem 1rem rgba(0, 0, 0, 0.02);
+
 }

@@ -4,15 +4,15 @@ import Form from '../../components/form/form';
 
 function SignIn()
 {
-    return <>
-    <div className='container'>
-        <div className='container-box'>
-            <Logo />
-            <Form />
-           
-
+    return (
+        <div>
+          <div className="container">
+            <div className="loginContainer">
+              <Logo />
+              <Form />
+            </div>
+          </div>
         </div>
-    </div>
-    </>
+      );
 }
 export default SignIn;
