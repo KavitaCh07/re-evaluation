@@ -1,0 +1,15 @@
+.dropdown {
+    position: absolute;
+    background-color: white;
+    display: flex;
+    width: 30%;
+}
+
+.dropdown-item {
+    border-bottom: 1px solid #F5F7FB;
+    padding: 0.5rem 1rem;
+}
+
+a{
+    all: unset;
+}

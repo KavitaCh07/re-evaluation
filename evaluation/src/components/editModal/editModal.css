@@ -1,0 +1,46 @@
+.overlay-edit {
+    position: absolute;
+    display: flex;
+    background: rgba(49, 49, 49, 0.8);
+    height: 92.5vh;
+    width: 100vw;
+    top: -14rem;
+    left: -4rem;
+    /* right: -26.32rem; */
+    bottom: 0px;
+    display: flex;
+    /* align-items: center; */
+    justify-content: center;
+    z-index: 2;
+}
+
+.site-details {
+    color: #3C4857;
+    font-family: "Open Sans";
+    font-size: 30px;
+    font-weight: 600;
+    letter-spacing: 0;
+    line-height: 41px;
+}
+
+.modal-top-edit-button {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.edit-text {
+    color: #FFFFFF;
+    font-family: "Open Sans";
+    font-size: 18px;
+    font-weight: 600;
+    letter-spacing: 0;
+    line-height: 24px;
+}
+
+.edit-buton {
+    border-radius: 4px;
+    background-color: #0E85FF;
+    border: none;
+    padding: 0rem 1.5rem;
+}

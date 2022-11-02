@@ -1,16 +1,13 @@
 import './signUpForm.css';
 import React, { useState } from 'react';
-import {useNavigate } from "react-router-dom";
+import { useNavigate } from "react-router-dom";
 // import Input from '../formInput/input';
 import eye_on from '../../assets/icons/eye_on.png'
-import { Link } from 'react-router-dom';
-
-
-
+// import { Link } from 'react-router-dom';
 
 const SignUpForm = () => {
 
-    const navigate = useNavigate();
+  const navigate = useNavigate();
   const [togglePin, setTogglePin] = useState<Boolean>(false);
   const onToggleChange = () => {
     setTogglePin(!togglePin);
@@ -78,16 +75,16 @@ const SignUpForm = () => {
         <div className="signUpText">SIGN UP</div>
         <form className="formContainer" onSubmit={signUpHandler}>
           <div className="">
-            <input type="text" placeholder="Enter Mobile Number" className="inputField_1" required minLength={10} maxLength={10} name="mobile"/>
+            <input type="text" placeholder="Enter Mobile Number" className="inputField_1" required minLength={10} maxLength={10} name="mobile" />
           </div>
           <div className="passwordPin_1">
-            <input type={togglePin ? "text" : "password"} placeholder="Enter 4 digit Pin" className="inputField_1" required minLength={4} maxLength={4} name="pin"/>
-            <img src={eye_on} alt="img" className="eyeIcon_1" onClick={onToggleChange}/>
+            <input type={togglePin ? "text" : "password"} placeholder="Enter 4 digit Pin" className="inputField_1" required minLength={4} maxLength={4} name="pin" />
+            <img src={eye_on} alt="img" className="eyeIcon_1" onClick={onToggleChange} />
           </div>
           <div className="passwordPin_1">
             <input
-              type={toggleMPin ? "text" : "password"} placeholder="Re Enter 4 digit Pin" className="inputField_1" required minLength={4} maxLength={4} name="mPin"/>
-            <img src={eye_on} alt="img" className="eyeIcon_1" onClick={onToggleMPinChange}/>
+              type={toggleMPin ? "text" : "password"} placeholder="Re Enter 4 digit Pin" className="inputField_1" required minLength={4} maxLength={4} name="mPin" />
+            <img src={eye_on} alt="img" className="eyeIcon_1" onClick={onToggleMPinChange} />
           </div>
           <button className="signUpButton">SIGN UP</button>
         </form>

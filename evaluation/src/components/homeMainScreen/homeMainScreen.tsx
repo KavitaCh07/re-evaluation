@@ -5,23 +5,21 @@ import Modal from '../modal/modal';
 import React, { useState } from "react";
 import pathCopy from '../../assets/icons/pathCopy.png'
 import Card from '../card/card';
-
+// import EditModal from '../editModal/editModal';
 
 const HomeMainScreen = () => {
   const [modal, setModal] = useState(false);
   const [card, setCard] = useState(false);
-
+  const [editModal, setEditModal] = useState(false);
 
   const childToParent = (data: any, i: any) => {
-    
-  };
 
-  
+  };
 
   const displayData = JSON.parse(localStorage.getItem("currentUser") || "[]");
   const siteData = JSON.parse(localStorage.getItem(displayData) || "[]");
   console.log(siteData);
-  
+
 
   return (
     <div>
@@ -37,8 +35,8 @@ const HomeMainScreen = () => {
             </div>
             <div className='pluse-btn'>
               <img src={add_btn} className="add_btn" onClick={() => { setModal(true); }} alt="" />
-              {modal && <Modal setModal={setModal}/>}
-              
+              {modal && <Modal setModal={setModal} />}
+
 
             </div>
           </div>
@@ -64,18 +62,12 @@ const HomeMainScreen = () => {
           </div>
         </div>
 
-        <div className='card-add'>
-          <Card childToParent={childToParent} search={search}/>
-        </div>
+          <div className='card-add' >
+            <div className="clickCard">
+              <Card childToParent={childToParent} /></div>
+          </div>
         </div>
         )}
-
-
-
-
-
-     
-
 
       </div>
     </div>

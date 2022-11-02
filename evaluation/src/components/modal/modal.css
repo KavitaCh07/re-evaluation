@@ -1,7 +1,7 @@
 .overlay {
   position: absolute;
   background: rgba(49, 49, 49, 0.8);
-  height: 86.7vh;
+  height: 89.5vh;
   top: -2rem;
   left: -4rem;
   right: -3.32rem;
@@ -133,4 +133,10 @@ label {
   line-height: 24px;
   text-align: center;
   color: #FFFFFF;
+}
+
+.close_btn {
+  left: 28rem;
+  position: absolute;
+  top: -1rem;
 }
