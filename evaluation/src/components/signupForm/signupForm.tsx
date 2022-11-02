@@ -63,7 +63,7 @@ const SignUpForm = () => {
         if (pin === mPin) {
           previousData.push(userData);
           localStorage.setItem("users", JSON.stringify(previousData));
-          localStorage.setItem(JSON.stringify(mobile), JSON.stringify([]));
+          localStorage.setItem(mobile, JSON.stringify([]));
           navigate("/");
         } else {
           alert("enter same pins");

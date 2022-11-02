@@ -9,43 +9,78 @@ import Card from '../card/card';
 
 const HomeMainScreen = () => {
   const [modal, setModal] = useState(false);
- return (
-  <div>
-  <div className="homeMargin">
-  <div className="homePage">
-        <div className="marginSpace">
+  const [card, setCard] = useState(false);
+
+
+  const childToParent = (data: any, i: any) => {
+    
+  };
+
+  
+
+  const displayData = JSON.parse(localStorage.getItem("currentUser") || "[]");
+  const siteData = JSON.parse(localStorage.getItem(displayData) || "[]");
+  console.log(siteData);
+  
+
+  return (
+    <div>
+      <div className="full-home-screen">
+
+        {/* topbar start*/}
+        <div className="home-inner-top">
           <div className="sites">Sites</div>
-          <div className="searchBar">
-            <div className="search">
-              <input type="text" placeholder="Search" className="searchInput" />
-              <img src={search} alt="search" className="searchIcon" />
+          <div className="home-inner-top-right">
+            <div className='searchbar'>
+              <input type="text" className='searchbar-input' placeholder='Search' name="" id="" />
+              <img src={search} className="search" alt="" />
             </div>
-            <div className="plus">
-              <img src={add_btn} alt="add" onClick={() => { setModal(true); }} />
-              {modal && <Modal />}
+            <div className='pluse-btn'>
+              <img src={add_btn} className="add_btn" onClick={() => { setModal(true); }} alt="" />
+              {modal && <Modal setModal={setModal}/>}
+              
+
             </div>
           </div>
         </div>
-      </div>
+        {/* topbar end */}
 
-      
-      <div className='social-media-container'>
-          <div className='add-sites'> 
-          
-            <div>Social Media</div>
-             <div className='count-circle'>07</div>
+        {JSON.stringify(siteData) === "[]" ? (
+          <div className="center-section">
+            <div className="grey-box">
+              <div className="grey-box-content">
+                Please Click on the “+” symbol
+                to add sites
+              </div>
+            </div>
+          </div>
+        ) : (<div><div className='social-media-container'>
+          <div className='add-sites'>
+            <div className='social-media'>Social Media</div>
+            <div className='count-circle'>{siteData.length < 10
+              ? `0${siteData.length}`
+              : siteData.length}</div>
             <div><img src={pathCopy} alt="" /></div>
-           
-          
           </div>
         </div>
 
+        <div className='card-add'>
+          <Card childToParent={childToParent} search={search}/>
+        </div>
+        </div>
+        )}
 
-        <Card/>
-  </div>
- </div>
- )
 
-}
+
+
+
+     
+
+
+      </div>
+    </div>
+  );
+
+};
 
 export default HomeMainScreen;

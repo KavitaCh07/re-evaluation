@@ -1,14 +1,15 @@
 .overlay {
   position: absolute;
   background: rgba(49, 49, 49, 0.8);
-  height: 100vh;
-  top: 0;
-  left: 0;
-  right: 0;
+  height: 86.7vh;
+  top: -2rem;
+  left: -4rem;
+  right: -3.32rem;
   bottom: 0;
   display: flex;
   /* align-items: center; */
   justify-content: center;
+  z-index: 2;
 }
 
 .modal-content {
